@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nirob | Graphic Designer & Computer Science Student</title>
+  <meta name="description"
+    content="Portfolio of Nirob, a graphic designer and Computer Science student at BUBT. Visual identities, posters, banners, and digital graphics backed by technical expertise.">
+  <meta name="keywords"
+    content="Nirob, Graphic Designer, BUBT, Computer Science, UI Design, Photoshop, Illustrator, Canva, Dhaka">
+  <meta name="author" content="Md Masudur Rahman Nirob">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nirob | Graphic Designer & Computer Science Student">
+  <meta property="og:description"
+    content="Masudur Rahman Nirob — Graphic Designer and Computer Science student at BUBT.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Scroll Progress Indicator Bar -->
+  <div id="scroll-progress-bar" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Full-Page 3D Vanta.NET Constellation Background -->
+  <div id="vanta-bg" aria-hidden="true"></div>
+  <header class="site-header" id="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo" id="brand-logo" aria-label="Nirob Homepage">
+        <div class="nav-logo-badge">N</div>
+        <span>
+          <strong>Nirob</strong>
+          <span class="logo-sub">Design &amp; CS</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link" id="nav-home">Home</a>
+        <a href="academic.html" class="nav-link" id="nav-academic">Academic</a>
+        <a href="leadership.html" class="nav-link" id="nav-leadership">Leadership &amp; Activities</a>
+        <a href="design.html" class="nav-link" id="nav-design">Graphic Design</a>
+        <a href="certificates.html" class="nav-link" id="nav-certificates">Certificates &amp; Achievements</a>
+        <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+      </nav>
+
+      <!-- Action items: Dark/Light Mode & Mobile Drawer -->
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Switch Theme">
+          <span id="theme-toggle-icon"></span>
+        </button>
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu"
+          aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="academic.html" class="nav-link">Academic</a>
+    <a href="leadership.html" class="nav-link">Leadership &amp; Activities</a>
+    <a href="design.html" class="nav-link">Graphic Design</a>
+    <a href="certificates.html" class="nav-link">Certificates &amp; Achievements</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-status-pill">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span>BUBT Computer Science Student &amp; Designer</span>
+          </div>
+
+          <h1 class="hero-title typewriter-hero-heading">
+            <!-- Accessible static text for screen readers -->
+            <span class="sr-only">Masudur Rahman Nirob - Graphic Designer, CSE Student, Programmer</span>
+
+            <!-- 2-line heading on desktop with light blue name highlight and line height 1.1 -->
+            <span class="heading-visual" aria-hidden="true">
+              <span class="hero-line hero-line-1">
+                I am <span class="hero-name-highlight">Masudur Rahman Nirob</span>
+              </span>
+              <span class="hero-line hero-line-2 typewriter-role-wrapper">
+                <span class="typewriter-output" id="hero-typewriter-text">Graphic Designer</span><span class="typewriter-cursor" id="typewriter-cursor"></span>
+              </span>
+            </span>
+          </h1>
+
+          <p class="hero-intro" id="hero-bio">
+            I am a graphic designer and Computer Science undergraduate at BUBT. My design-first approach focuses on
+            visual clarity, branding, and impact, while my CS background gives me a solid grasp of technical constraints
+            and seamless collaboration with engineering teams.
+          </p>
+
+          <!-- HERO BUTTON ROW -->
+          <div class="hero-cta-group">
+            <a href="design.html" class="btn btn-hero-primary" id="btn-hero-work">
+              View Design Work &rarr;
+            </a>
+            <a href="academic.html" class="btn btn-hero-dark" id="btn-hero-academic">
+              Academic Projects
+            </a>
+            <a href="assets/cv/Nirob_CV.pdf" download="Nirob_CV.pdf" class="btn btn-hero-dark btn-hero-cv" id="btn-hero-cv">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="btn-cv-icon">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download CV</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" id="hero-visual-container">
+          <!-- Soft glowing halo behind the frame (blue on left/bottom, purple on top-right) -->
+          <div class="hero-halo-glow" aria-hidden="true"></div>
+
+          <!-- 3D Tilt & Floating Outer Frame Container -->
+          <div class="hero-profile-frame" id="hero-profile-frame">
+            <!-- Inner card surface holding the black & white photo -->
+            <div class="hero-photo-inner">
+              <img 
+                src="assets/images/profile.jpg" 
+                alt="Portrait of Masudur Rahman Nirob" 
+                id="hero-photo" 
+                width="440" 
+                height="440" 
+                loading="eager"
+                fetchpriority="high"
+                class="hero-bw-portrait"
+              />
+            </div>
+
+            <!-- Status Pill Overlapping the Bottom of the Photo with Soft Green Glow -->
+            <div class="hero-status-tag" id="hero-status-tag">
+              <span class="status-green-dot" aria-hidden="true"></span>
+              <span class="status-tag-text">B.Sc. CSE &bull; BUBT</span>
+            </div>
+
+            <!-- Small circular badge overlapping bottom-right corner with lightning bolt -->
+            <div class="hero-corner-badge" title="Energy & Precision">
+              <svg viewBox="0 0 24 24" class="badge-bolt-icon" aria-hidden="true">
+                <path d="M13 2L3 14h7v8l11-12h-8z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- FULL-WIDTH CONTACT BAR AT BOTTOM OF HERO -->
+        <div class="hero-bottom-bar-wrap">
+          <!-- THIN DIVIDER LINE -->
+          <div class="hero-divider" aria-hidden="true"></div>
+
+          <!-- CONTACT BAR -->
+          <div class="hero-contact-bar">
+            <!-- Left Side: Contact Items with Icons in One Clean Row -->
+            <div class="hero-contact-items">
+              <div class="hero-contact-item" title="Location">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="hero-contact-icon" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span id="hero-location-text">Mirpur Section-2, Dhaka, Bangladesh</span>
+              </div>
+
+              <a href="mailto:masudurrahmannirob@gmail.com" class="hero-contact-item hero-contact-link" id="hero-email-link" title="Send an Email">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="hero-contact-icon" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span id="hero-email-text">masudurrahmannirob@gmail.com</span>
+              </a>
+
+              <a href="tel:+8801828384972" class="hero-contact-item hero-contact-link" id="hero-phone-link" title="Call or WhatsApp">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="hero-contact-icon" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                <span id="hero-phone-text">+880 1828384972</span>
+              </a>
+            </div>
+
+            <!-- Right Side: Square Rounded Icon Buttons with Tooltip -->
+            <div class="hero-social-group">
+              <a href="https://www.linkedin.com/in/masudur-rahman-nirob-263aaa265/" target="_blank" rel="noopener noreferrer" class="hero-social-btn" data-tooltip="LinkedIn" aria-label="LinkedIn" id="hero-social-linkedin">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+
+              <a href="https://www.behance.net/mrnirob51" target="_blank" rel="noopener noreferrer" class="hero-social-btn" data-tooltip="Behance" aria-label="Behance" id="hero-social-behance">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+
+              <a href="https://github.com/nirob5151" target="_blank" rel="noopener noreferrer" class="hero-social-btn" data-tooltip="GitHub" aria-label="GitHub" id="hero-social-github">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+
+              <a href="https://www.facebook.com/mdmr.nirob.3" target="_blank" rel="noopener noreferrer" class="hero-social-btn" data-tooltip="Facebook" aria-label="Facebook" id="hero-social-facebook">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIMARY CREATIVE & DESIGN TOOLS SECTION (INFINITE MARQUEE) -->
+    <section class="section tools-section" id="tools" aria-label="Primary Creative &amp; Design Tools">
+      <div class="container">
+        <div class="section-header tools-section-header">
+          <span class="section-tag">Core Toolkit</span>
+          <h2 class="section-title">Primary Creative &amp; Design Tools</h2>
+          <p class="section-description">The tools I use to bring ideas to life.</p>
+        </div>
+      </div>
+
+      <!-- MARQUEE TRACK CONTAINER (Edges fade into background) -->
+      <div class="tools-marquee-container" id="tools-marquee-container">
+        <div class="tools-marquee-track" id="tools-marquee-track">
+          <!-- Populated dynamically via home.js from data.js (duplicated once for infinite seamless loop) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FOCUS AREAS & CORE STRENGTHS SECTION -->
+    <section class="section focus-section" id="focus-areas" aria-label="Focus Areas &amp; Core Strengths">
+      <!-- Ambient dots and subtle grid drift background -->
+      <div class="focus-section-bg" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="section-header focus-section-header reveal">
+          <span class="section-tag">Core Competencies</span>
+          <h2 class="section-title">Focus Areas &amp; Core Strengths</h2>
+          <p class="section-description">
+            A structured breakdown of my graphic design work, UI design skills, and the computer science foundation behind them.
+          </p>
+        </div>
+
+        <div class="focus-cards-grid" id="focus-cards-grid">
+          <!-- CARD 1 - Graphic Design (accent: blue) -->
+          <div class="focus-card reveal reveal-delay-1" data-accent="blue">
+            <div class="focus-card-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                <path d="M2 2l7.586 7.586"/>
+                <circle cx="11" cy="11" r="2"/>
+              </svg>
+            </div>
+            <h3 class="focus-card-title">Graphic Design</h3>
+            <div class="focus-card-subtitle">Posters, Banners &amp; Social Media</div>
+            <ul class="focus-card-bullets">
+              <li class="focus-card-bullet-item">
+                <span class="focus-card-bullet-dot" aria-hidden="true"></span>
+                <span>Designing event posters and promotional banners</span>
+              </li>
+              <li class="focus-card-bullet-item">
+                <span class="focus-card-bullet-dot" aria-hidden="true"></span>
+                <span>Creating social media campaigns for clubs and events</span>
+              </li>
+              <li class="focus-card-bullet-item">
+                <span class="focus-card-bullet-dot" aria-hidden="true"></span>
+                <span>Designing paper bags, T-shirts, ID cards, and ID card ribbons</span>
+              </li>
+              <li class="focus-card-bullet-item">
+                <span class="focus-card-bullet-dot" aria-hidden="true"></span>
+                <span>Creating pens and other promotional materials for events and organizations</span>
+              </li>
+            </ul>
+            <div class="focus-card-divider" aria-hidden="true"></div>
+            <span class="focus-card-tag">Graphic Design &bull; Branding &bull; Print Media</span>
+          </div>
+
+          <!-- CARD 2 - UI Design (accent: purple) -->
+          <div class="focus-card reveal reveal-delay-2" data-accent="purple">
+            <div class="focus-card-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <line x1="3" y1="9" x2="21" y2="9"/>
+                <line x1="9" y1="21" x2="9" y2="9"/>
+              </svg>
+            </div>
+            <h3 class="focus-card-title">UI Design</h3>
+            <div class="focus-card-subtitle">Interfaces for Real Products</div>
+            <ul class="focus-card-bullets">
+              <li class="focus-card-bullet-item">
+                <span class="focus-card-bullet-dot" aria-hidden="true"></span>
+                <span>Club Connect, a university club management web app</span>
+              </li>
+              <li class="focus-card-bullet-item">
+                <span class="focus-card-bullet-dot" aria-hidden="true"></span>
+                <span>Wireframes and clean screen layouts in Figma</span>
+              </li>
+              <li class="focus-card-bullet-item">
+                <span class="focus-card-bullet-dot" aria-hidden="true"></span>
+                <span>Consistent color, spacing, and typography</span>
+              </li>
+            </ul>
+            <div class="focus-card-divider" aria-hidden="true"></div>
+            <span class="focus-card-tag">Web App Interface Design</span>
+          </div>
+
+          <!-- CARD 3 - Tech Background (accent: green) -->
+          <div class="focus-card reveal reveal-delay-3" data-accent="green">
+            <div class="focus-card-icon-box" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/>
+                <polyline points="8 6 2 12 8 18"/>
+                <line x1="14" y1="4" x2="10" y2="20"/>
+              </svg>
+            </div>
+            <h3 class="focus-card-title">Computer Science at BUBT</h3>
+            <div class="focus-card-subtitle">Combining Technical Knowledge with Creative Design</div>
+            <ul class="focus-card-bullets">
+              <li class="focus-card-bullet-item">
+                <span class="focus-card-bullet-dot" aria-hidden="true"></span>
+                <span>Understanding technical requirements, file formats, and design specifications</span>
+              </li>
+              <li class="focus-card-bullet-item">
+                <span class="focus-card-bullet-dot" aria-hidden="true"></span>
+                <span>Collaborating effectively with developers on design handoff</span>
+              </li>
+              <li class="focus-card-bullet-item">
+                <span class="focus-card-bullet-dot" aria-hidden="true"></span>
+                <span>Learning C, C++, Python, C#, and programming fundamentals</span>
+              </li>
+              <li class="focus-card-bullet-item">
+                <span class="focus-card-bullet-dot" aria-hidden="true"></span>
+                <span>Exploring AI, ML, Unity game development, and interactive technologies</span>
+              </li>
+            </ul>
+            <div class="focus-card-divider" aria-hidden="true"></div>
+            <span class="focus-card-tag">B.Sc. CSE &bull; BUBT</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS PREVIEW -->
+    <section class="section featured-section" id="featured-projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Selected Works</span>
+          <h2 class="section-title">Featured Design Projects</h2>
+          <p class="section-description">
+            A preview of recent creative outputs spanning event branding, digital graphics, and UI design.
+          </p>
+        </div>
+
+        <div class="projects-grid" id="featured-projects-grid">
+          <!-- Populated dynamically with 3 featured projects from data.js -->
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <a href="design.html" class="btn btn-outline" id="btn-all-designs">
+            Explore All Design Work &amp; Gallery
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- REUSABLE PROJECT DETAIL MODAL -->
+  <div class="modal-overlay" id="project-detail-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close project modal">&times;</button>
+
+      <div class="modal-hero-image-wrap">
+        <img id="modal-cover-img" src="" alt="Project image preview" />
+      </div>
+
+      <div class="modal-body">
+        <span class="section-tag" id="modal-category-badge">Category</span>
+        <h2 class="section-title" id="modal-title" style="margin-top: 8px;">Project Title</h2>
+
+        <div class="modal-meta-grid">
+          <div class="meta-field">
+            <label>Client / Event</label>
+            <span id="modal-client">[Client Name]</span>
+          </div>
+          <div class="meta-field">
+            <label>My Role</label>
+            <span id="modal-role">[Designer Role]</span>
+          </div>
+          <div class="meta-field">
+            <label>Tools Used</label>
+            <span id="modal-tools">[Tools]</span>
+          </div>
+        </div>
+
+        <div class="modal-detail-block">
+          <h4>The Brief</h4>
+          <p id="modal-brief">[Project Brief]</p>
+        </div>
+
+        <div class="modal-detail-block">
+          <h4>Design Approach &amp; Process</h4>
+          <p id="modal-process">[Process]</p>
+        </div>
+
+        <div class="modal-detail-block">
+          <h4>Final Result</h4>
+          <p id="modal-result">[Result]</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <!-- FOOTER -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container footer-grid-container">
+      <!-- LEFT COLUMN: Brand -->
+      <div class="footer-col footer-col-brand">
+        <a href="index.html" class="footer-brand-logo" aria-label="Nirob Homepage">
+          <div class="footer-logo-badge" id="footer-logo-badge">N</div>
+          <div class="footer-brand-text">
+            <span class="footer-brand-name" id="footer-brand-name">Masudur Rahman Nirob</span>
+            <span class="footer-brand-role" id="footer-brand-role">GRAPHIC DESIGNER &amp; CS STUDENT</span>
+          </div>
+        </a>
+        <p class="footer-bio" id="footer-bio">
+          Graphic designer with a Computer Science foundation at BUBT. Turning ideas into high-impact visuals, brand identities, and clean interfaces that get results.
+        </p>
+      </div>
+
+      <!-- MIDDLE COLUMN: Navigation -->
+      <div class="footer-col footer-col-nav">
+        <h4 class="footer-heading" id="footer-nav-heading">Navigation</h4>
+        <ul class="footer-links-list" id="footer-nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="academic.html">Academic</a></li>
+          <li><a href="leadership.html">Leadership &amp; Activities</a></li>
+          <li><a href="design.html">Graphic Design</a></li>
+          <li><a href="certificates.html">Certificates &amp; Achievements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- RIGHT COLUMN: Quick Links -->
+      <div class="footer-col footer-col-quick">
+        <h4 class="footer-heading" id="footer-quick-heading">Quick Links</h4>
+        <ul class="footer-links-list footer-quick-list" id="footer-quick-list">
+          <li>
+            <a href="assets/cv/Nirob_CV.pdf" download="Nirob_CV.pdf" class="footer-quick-link" id="footer-link-cv">
+              <span class="footer-quick-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              </span>
+              <span>Download CV</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/masudur-rahman-nirob-263aaa265/" target="_blank" rel="noopener noreferrer" class="footer-quick-link" id="footer-link-linkedin">
+              <span class="footer-quick-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </span>
+              <span>LinkedIn Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.behance.net/mrnirob51" target="_blank" rel="noopener noreferrer" class="footer-quick-link" id="footer-link-behance">
+              <span class="footer-quick-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </span>
+              <span>Behance Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/nirob5151" target="_blank" rel="noopener noreferrer" class="footer-quick-link" id="footer-link-github">
+              <span class="footer-quick-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </span>
+              <span>GitHub Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/mdmr.nirob.3" target="_blank" rel="noopener noreferrer" class="footer-quick-link" id="footer-link-facebook">
+              <span class="footer-quick-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </span>
+              <span>Facebook Profile</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar: Copyright Line & Back to top -->
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text" id="footer-copyright">
+          &copy; <span class="current-year">2026</span> Masudur Rahman Nirob. All rights reserved.
+        </p>
+        <div class="footer-bottom-right">
+          <span class="footer-built-with" id="footer-built-with">Built with Next.js &amp; TypeScript</span>
+          <a href="#main-header" class="footer-back-to-top" id="footer-back-to-top" aria-label="Back to top">
+            <span>Back to top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js?v=2.6"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="assets/js/vanta-init.js"></script>
+  <script src="assets/js/home.js?v=2.6"></script>
+</body>
+
+</html>

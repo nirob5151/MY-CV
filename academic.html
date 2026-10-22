@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic | Nirob - BUBT Computer Science</title>
+  <meta name="description" content="Explore Nirob's Computer Science coursework, academic software projects, and computing degree curriculum at BUBT.">
+  <meta name="keywords" content="Nirob, BUBT, Computer Science, Academic Projects, Software Engineering, Coursework">
+  <meta name="author" content="Md Masudur Rahman Nirob">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Academic Projects | Nirob">
+  <meta property="og:description" content="Computer Science software and computing coursework developed during my degree at BUBT.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Main Stylesheet with version cache buster -->
+  <link rel="stylesheet" href="assets/css/style.css?v=2.3">
+
+  <style>
+    /* Critical layout guarantee: 2 education boxes side-by-side in same line */
+    .education-cards-grid {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 32px !important;
+      margin-bottom: 55px !important;
+      align-items: stretch !important;
+    }
+
+    .education-card {
+      background: #0d1424 !important;
+      background: rgba(13, 20, 36, 0.92) !important;
+      border: 1px solid rgba(56, 189, 248, 0.25) !important;
+      border-radius: 20px !important;
+      padding: 32px 30px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 15px rgba(56, 189, 248, 0.08) !important;
+      backdrop-filter: blur(14px) !important;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease !important;
+      position: relative !important;
+    }
+
+    .education-card:hover {
+      transform: translateY(-5px) !important;
+      border-color: #38bdf8 !important;
+      box-shadow: 0 18px 42px -6px rgba(0, 0, 0, 0.6), 0 0 25px rgba(56, 189, 248, 0.22) !important;
+    }
+
+    .education-card-top {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+      flex-wrap: wrap !important;
+      gap: 12px !important;
+      margin-bottom: 20px !important;
+    }
+
+    .education-icon-box {
+      width: 48px !important;
+      height: 48px !important;
+      border-radius: 14px !important;
+      background: rgba(56, 189, 248, 0.12) !important;
+      border: 1px solid rgba(56, 189, 248, 0.35) !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      color: #38bdf8 !important;
+      box-shadow: 0 0 14px rgba(56, 189, 248, 0.25) !important;
+      flex-shrink: 0 !important;
+    }
+
+    .education-status-badges {
+      display: flex !important;
+      align-items: center !important;
+      flex-wrap: wrap !important;
+      gap: 8px !important;
+    }
+
+    .edu-badge {
+      display: inline-flex !important;
+      align-items: center !important;
+      gap: 6px !important;
+      font-size: 0.8rem !important;
+      font-weight: 700 !important;
+      padding: 6px 14px !important;
+      border-radius: 9999px !important;
+    }
+
+    .edu-badge-group {
+      background: rgba(168, 85, 247, 0.14) !important;
+      color: #c084fc !important;
+      border: 1px solid rgba(168, 85, 247, 0.35) !important;
+    }
+
+    .edu-badge-period {
+      background: rgba(56, 189, 248, 0.14) !important;
+      color: #38bdf8 !important;
+      border: 1px solid rgba(56, 189, 248, 0.35) !important;
+    }
+
+    .education-degree-title {
+      font-size: 1.28rem !important;
+      font-weight: 800 !important;
+      color: #ffffff !important;
+      margin-bottom: 8px !important;
+      line-height: 1.35 !important;
+    }
+
+    .education-institution {
+      font-size: 1.02rem !important;
+      font-weight: 700 !important;
+      color: #38bdf8 !important;
+      margin-bottom: 8px !important;
+    }
+
+    .education-location {
+      display: flex !important;
+      align-items: center !important;
+      gap: 6px !important;
+      font-size: 0.85rem !important;
+      color: #94a3b8 !important;
+      font-weight: 500 !important;
+      margin-bottom: 18px !important;
+    }
+
+    .education-location svg {
+      color: #64748b !important;
+      flex-shrink: 0 !important;
+    }
+
+    .education-details-list {
+      list-style: none !important;
+      padding: 0 !important;
+      margin: 0 0 22px 0 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 10px !important;
+      flex-grow: 1 !important;
+    }
+
+    .education-details-list li {
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 10px !important;
+      font-size: 0.92rem !important;
+      color: #cbd5e1 !important;
+      line-height: 1.55 !important;
+    }
+
+    .education-details-list .bullet-check {
+      flex-shrink: 0 !important;
+      margin-top: 3px !important;
+      width: 18px !important;
+      height: 18px !important;
+      border-radius: 50% !important;
+      background: rgba(34, 197, 94, 0.15) !important;
+      border: 1px solid rgba(34, 197, 94, 0.4) !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      box-shadow: 0 0 8px rgba(34, 197, 94, 0.3) !important;
+    }
+
+    .education-tags {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      gap: 6px !important;
+      padding-top: 16px !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    }
+
+    .education-tags .tag-pill {
+      display: inline-block !important;
+      padding: 4px 10px !important;
+      border-radius: 6px !important;
+      font-size: 0.76rem !important;
+      font-weight: 600 !important;
+      background: rgba(255, 255, 255, 0.04) !important;
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+      color: #94a3b8 !important;
+      transition: all 0.2s ease !important;
+    }
+
+    @media (max-width: 820px) {
+      .education-cards-grid {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+      }
+    }
+
+    [data-theme="light"] .education-card {
+      background: #ffffff !important;
+      border-color: #e2e8f0 !important;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06) !important;
+    }
+
+    [data-theme="light"] .education-card:hover {
+      border-color: #0284c7 !important;
+      box-shadow: 0 16px 36px rgba(2, 132, 199, 0.14) !important;
+    }
+
+    [data-theme="light"] .education-icon-box {
+      background: rgba(2, 132, 199, 0.08) !important;
+      border-color: rgba(2, 132, 199, 0.25) !important;
+      color: #0284c7 !important;
+    }
+
+    [data-theme="light"] .education-degree-title {
+      color: #0f172a !important;
+    }
+
+    [data-theme="light"] .education-institution {
+      color: #0284c7 !important;
+    }
+
+    [data-theme="light"] .education-details-list li {
+      color: #334155 !important;
+    }
+
+    [data-theme="light"] .edu-badge-period {
+      background: rgba(2, 132, 199, 0.08) !important;
+      color: #0284c7 !important;
+      border-color: rgba(2, 132, 199, 0.25) !important;
+    }
+
+    [data-theme="light"] .education-tags {
+      border-top-color: #e2e8f0 !important;
+    }
+
+    /* TOOLS & SOFTWARE MARQUEE SECTION */
+    .tools-software-section {
+      padding: 75px 0 85px;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      overflow: hidden;
+      position: relative;
+    }
+
+    [data-theme="dark"] .tools-software-section {
+      background: #090e1a;
+    }
+
+    .tools-section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 48px;
+    }
+
+    .tools-marquee-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      padding: 16px 0;
+      cursor: grab;
+      mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    }
+
+    .tools-marquee-container:active {
+      cursor: grabbing;
+    }
+
+    .tools-marquee-track {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      width: max-content;
+      will-change: transform;
+    }
+
+    #academic-tools-marquee-track {
+      animation: toolsMarqueeScroll 50s linear infinite;
+    }
+
+    @keyframes toolsMarqueeScroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .tools-marquee-container:hover .tools-marquee-track:not(.is-running) {
+        animation-play-state: paused;
+      }
+    }
+
+    .tools-marquee-track.is-paused {
+      animation-play-state: paused !important;
+    }
+
+    .tools-marquee-track.is-running {
+      animation-play-state: running !important;
+    }
+
+    .tool-card {
+      width: 360px;
+      min-width: 360px;
+      max-width: 360px;
+      flex-shrink: 0;
+      background: #0d1424;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      padding: 22px 24px;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
+      cursor: default;
+      user-select: none;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+      border-color: #38bdf8;
+      background: #111a30;
+      box-shadow: 0 14px 32px -4px rgba(56, 189, 248, 0.35), 0 0 20px rgba(56, 189, 248, 0.22);
+    }
+
+    [data-theme="light"] .tool-card {
+      background: #0d1424;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .tool-icon-wrapper {
+      width: 52px;
+      height: 52px;
+      min-width: 52px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform var(--transition-fast);
+    }
+
+    .tool-card:hover .tool-icon-wrapper {
+      transform: scale(1.08);
+    }
+
+    .tool-icon-wrapper svg {
+      width: 32px;
+      height: 32px;
+      display: block;
+    }
+
+    .tool-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      overflow: hidden;
+    }
+
+    .tool-name {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+    }
+
+    .tool-desc {
+      font-size: 0.84rem;
+      color: #94a3b8;
+      line-height: 1.45;
+      margin: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator Bar -->
+  <div id="scroll-progress-bar" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Full-Page 3D Vanta.NET Constellation Background -->
+  <div id="vanta-bg" aria-hidden="true"></div>
+  <!-- Sticky Top Navigation -->
+  <header class="site-header" id="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Nirob Homepage">
+        <div class="nav-logo-badge">N</div>
+        <span>
+          <strong>Nirob</strong>
+          <span class="logo-sub">Design &amp; CS</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="academic.html" class="nav-link active">Academic</a>
+        <a href="leadership.html" class="nav-link">Leadership &amp; Activities</a>
+        <a href="design.html" class="nav-link">Graphic Design</a>
+        <a href="certificates.html" class="nav-link">Certificates &amp; Achievements</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Theme Switcher & Mobile Toggle -->
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle dark/light mode" title="Switch Theme">
+          <span id="theme-toggle-icon"></span>
+        </button>
+        <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="academic.html" class="nav-link active">Academic</a>
+    <a href="leadership.html" class="nav-link">Leadership &amp; Activities</a>
+    <a href="design.html" class="nav-link">Graphic Design</a>
+    <a href="certificates.html" class="nav-link">Certificates &amp; Achievements</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- SECTION: EDUCATION BACKGROUND -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Journey</span>
+          <h1 class="section-title">Education</h1>
+          <p class="section-description">
+            My foundational academic milestones
+          </p>
+        </div>
+
+        <div class="education-cards-grid" id="education-grid">
+          <!-- Populated dynamically via academic.js from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: TOOLS & SOFTWARE (SCROLLING RIGHT TO LEFT) -->
+    <section class="section tools-software-section" id="tools-software" aria-label="Tools &amp; Software">
+      <div class="container">
+        <div class="section-header tools-section-header">
+          <span class="section-tag">Engineering &amp; Development Toolkit</span>
+          <h2 class="section-title">Tools &amp; Software</h2>
+          <p class="section-description">
+            The programming languages, frameworks, cloud platforms, and developer environments I work with.
+          </p>
+        </div>
+      </div>
+
+      <!-- MARQUEE TRACK CONTAINER (Edges fade into background, continuous right-to-left loop) -->
+      <div class="tools-marquee-container" id="academic-tools-marquee-container">
+        <div class="tools-marquee-track" id="academic-tools-marquee-track">
+          <!-- Populated dynamically via academic.js from data.js (duplicated once for infinite seamless loop) -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: ACADEMIC PROJECTS -->
+    <section class="section" id="academic-projects" style="border-top: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Computer Science &amp; Engineering</span>
+          <h2 class="section-title">Academic Projects</h2>
+          <p class="section-description">
+            Software and computing coursework developed during my degree at BUBT, connecting algorithmic theory with intuitive user interfaces.
+          </p>
+        </div>
+
+        <div class="academic-cards-grid" id="academic-projects-grid">
+          <!-- Populated dynamically via academic.js from data.js -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container footer-grid-container">
+      <!-- LEFT COLUMN: Brand -->
+      <div class="footer-col footer-col-brand">
+        <a href="index.html" class="footer-brand-logo" aria-label="Nirob Homepage">
+          <div class="footer-logo-badge" id="footer-logo-badge">N</div>
+          <div class="footer-brand-text">
+            <span class="footer-brand-name" id="footer-brand-name">Masudur Rahman Nirob</span>
+            <span class="footer-brand-role" id="footer-brand-role">GRAPHIC DESIGNER &amp; CS STUDENT</span>
+          </div>
+        </a>
+        <p class="footer-bio" id="footer-bio">
+          Graphic designer with a Computer Science foundation at BUBT. Turning ideas into high-impact visuals, brand identities, and clean interfaces that get results.
+        </p>
+      </div>
+
+      <!-- MIDDLE COLUMN: Navigation -->
+      <div class="footer-col footer-col-nav">
+        <h4 class="footer-heading" id="footer-nav-heading">Navigation</h4>
+        <ul class="footer-links-list" id="footer-nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="academic.html">Academic</a></li>
+          <li><a href="leadership.html">Leadership &amp; Activities</a></li>
+          <li><a href="design.html">Graphic Design</a></li>
+          <li><a href="certificates.html">Certificates &amp; Achievements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- RIGHT COLUMN: Quick Links -->
+      <div class="footer-col footer-col-quick">
+        <h4 class="footer-heading" id="footer-quick-heading">Quick Links</h4>
+        <ul class="footer-links-list footer-quick-list" id="footer-quick-list">
+          <li>
+            <a href="assets/cv/Nirob_CV.pdf" download="Nirob_CV.pdf" class="footer-quick-link" id="footer-link-cv">
+              <span class="footer-quick-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              </span>
+              <span>Download CV</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/masudur-rahman-nirob-263aaa265/" target="_blank" rel="noopener noreferrer" class="footer-quick-link" id="footer-link-linkedin">
+              <span class="footer-quick-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </span>
+              <span>LinkedIn Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.behance.net/mrnirob51" target="_blank" rel="noopener noreferrer" class="footer-quick-link" id="footer-link-behance">
+              <span class="footer-quick-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </span>
+              <span>Behance Portfolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/nirob5151" target="_blank" rel="noopener noreferrer" class="footer-quick-link" id="footer-link-github">
+              <span class="footer-quick-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </span>
+              <span>GitHub Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/mdmr.nirob.3" target="_blank" rel="noopener noreferrer" class="footer-quick-link" id="footer-link-facebook">
+              <span class="footer-quick-icon">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+              </span>
+              <span>Facebook Profile</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar: Copyright Line & Back to top -->
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-container">
+        <p class="copyright-text" id="footer-copyright">
+          &copy; <span class="current-year">2026</span> Masudur Rahman Nirob. All rights reserved.
+        </p>
+        <div class="footer-bottom-right">
+          <span class="footer-built-with" id="footer-built-with">Built with Next.js &amp; TypeScript</span>
+          <a href="#main-header" class="footer-back-to-top" id="footer-back-to-top" aria-label="Back to top">
+            <span>Back to top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js?v=2.5"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="assets/js/vanta-init.js"></script>
+  <script src="assets/js/academic.js?v=2.6"></script>
+</body>
+</html>

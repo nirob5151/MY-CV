@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 850" width="1200" height="850">
+  <defs>
+    <linearGradient id="bgGrad_ICT_WORLD_2025" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1136" />
+      <stop offset="100%" stop-color="#020408" />
+    </linearGradient>
+    <linearGradient id="borderGrad_ICT_WORLD_2025" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="50%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="sealGrad_ICT_WORLD_2025" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+    <filter id="glow_ICT_WORLD_2025" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="850" fill="url(#bgGrad_ICT_WORLD_2025)" />
+
+  <!-- Outer Ornate Border -->
+  <rect x="30" y="30" width="1140" height="790" fill="none" stroke="url(#borderGrad_ICT_WORLD_2025)" stroke-width="3" rx="16" opacity="0.9" />
+  <rect x="42" y="42" width="1116" height="766" fill="none" stroke="url(#borderGrad_ICT_WORLD_2025)" stroke-width="1.2" stroke-dasharray="10 5" rx="12" opacity="0.6" />
+  <rect x="52" y="52" width="1096" height="746" fill="none" stroke="#8b5cf6" stroke-width="0.8" opacity="0.3" rx="8" />
+
+  <!-- Corner Flourishes -->
+  <g stroke="#8b5cf6" stroke-width="2" fill="none" opacity="0.8">
+    <path d="M 60 90 L 60 60 L 90 60" />
+    <circle cx="60" cy="60" r="5" fill="#8b5cf6" />
+    <path d="M 1140 90 L 1140 60 L 1110 60" />
+    <circle cx="1140" cy="60" r="5" fill="#8b5cf6" />
+    <path d="M 60 760 L 60 790 L 90 790" />
+    <circle cx="60" cy="790" r="5" fill="#8b5cf6" />
+    <path d="M 1140 760 L 1140 790 L 1110 790" />
+    <circle cx="1140" cy="790" r="5" fill="#8b5cf6" />
+  </g>
+
+  <!-- Header Section -->
+  <text x="600" y="125" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="20" font-weight="700" fill="#8b5cf6" letter-spacing="4" opacity="0.95">BASIS STUDENTS FORUM | BUBT CHAPTER CLUB</text>
+  <text x="600" y="160" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" font-weight="600" fill="#94a3b8" letter-spacing="2">SEMINAR: SHAPING THE FUTURE WITH TECH - EXPLORING THE ICT WORLD</text>
+  <line x1="420" y1="185" x2="780" y2="185" stroke="#8b5cf6" stroke-width="1.5" opacity="0.7" />
+
+  <!-- Certificate Type Title -->
+  <text x="600" y="250" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="2">CERTIFICATE OF APPRECIATION</text>
+
+  <!-- Presentation Clause -->
+  <text x="600" y="315" text-anchor="middle" font-family="'Inter', sans-serif" font-size="16" font-style="italic" fill="#cbd5e1" letter-spacing="1">This is proudly presented and conferred upon</text>
+
+  <!-- Recipient Name -->
+  <text x="600" y="390" text-anchor="middle" font-family="'Montserrat', 'Playfair Display', serif" font-size="46" font-weight="800" fill="url(#borderGrad_ICT_WORLD_2025)" letter-spacing="1" filter="url(#glow_ICT_WORLD_2025)">Md Masudur Rahman Nirob</text>
+  <line x1="300" y1="415" x2="900" y2="415" stroke="#8b5cf6" stroke-width="2" opacity="0.8" />
+
+  <!-- Body Text in Pure SVG text/tspan -->
+  <text x="600" y="475" text-anchor="middle" font-family="'Inter', sans-serif" font-size="17" fill="#cbd5e1" letter-spacing="0.4">
+    <tspan x="600" dy="0">Awarded with high appreciation for outstanding dedication and</tspan><tspan x="600" dy="28">volunteering in organizing the high-impact seminar Shaping the Future</tspan><tspan x="600" dy="28">with Tech: Exploring the ICT World.</tspan>
+  </text>
+
+  <!-- Official Seal -->
+  <g transform="translate(600, 645)">
+    <circle cx="0" cy="0" r="48" fill="url(#sealGrad_ICT_WORLD_2025)" opacity="0.95" filter="url(#glow_ICT_WORLD_2025)" />
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="4 2" />
+    <circle cx="0" cy="0" r="34" fill="#1e1136" />
+    <text x="0" y="-8" text-anchor="middle" font-family="'Cinzel', serif" font-size="10" font-weight="800" fill="#8b5cf6" letter-spacing="1">OFFICIAL</text>
+    <text x="0" y="8" text-anchor="middle" font-family="'Cinzel', serif" font-size="12" font-weight="800" fill="#ffffff">ICT WORLD 2025</text>
+    <text x="0" y="20" text-anchor="middle" font-family="'Cinzel', serif" font-size="9" font-weight="700" fill="#8b5cf6" letter-spacing="1">VERIFIED</text>
+  </g>
+
+  <!-- Left Signature Block (Date / Verified) -->
+  <g transform="translate(260, 680)">
+    <line x1="-100" y1="0" x2="100" y2="0" stroke="#64748b" stroke-width="1.5" />
+    <text x="0" y="24" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#ffffff">February 2025</text>
+    <text x="0" y="44" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8" letter-spacing="1">DATE OF ISSUANCE</text>
+  </g>
+
+  <!-- Right Signature Block (Issuer) -->
+  <g transform="translate(940, 680)">
+    <line x1="-120" y1="0" x2="120" y2="0" stroke="#64748b" stroke-width="1.5" />
+    <text x="0" y="24" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" font-weight="700" fill="#ffffff">BASIS Students Forum &amp; ICT Olympiad BD</text>
+    <text x="0" y="44" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8" letter-spacing="1">AUTHORIZED SIGNATORY</text>
+  </g>
+</svg>

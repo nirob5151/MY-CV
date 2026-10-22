@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="socBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="60%" stop-color="#022c22" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#socBg)" />
+
+  <!-- Geometric Islamic Pattern Background -->
+  <g stroke="rgba(250, 204, 21, 0.12)" stroke-width="1.5" fill="none">
+    <circle cx="400" cy="400" r="320" />
+    <circle cx="400" cy="400" r="240" />
+    <polygon points="400,160 570,300 570,500 400,640 230,500 230,300" />
+    <polygon points="400,640 570,500 570,300 400,160 230,300 230,500" transform="rotate(30, 400, 400)" />
+  </g>
+
+  <!-- Crescent & Star -->
+  <path d="M440 220 A90 90 0 1 0 440 370 A70 70 0 1 1 440 220 Z" fill="url(#goldGrad)" />
+  <polygon points="470,250 478,272 500,272 482,285 489,307 470,294 451,307 458,285 440,272 462,272" fill="url(#goldGrad)" />
+
+  <!-- Arabic Typography / Festive Greeting -->
+  <text x="400" y="460" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="52" fill="#ffffff" text-anchor="middle" letter-spacing="2">RAMADAN KAREEM</text>
+  <text x="400" y="505" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="20" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="4">BUBT CULTURAL CLUB WISHES YOU PEACE &amp; JOY</text>
+
+  <!-- Divider -->
+  <line x1="280" y1="535" x2="520" y2="535" stroke="url(#goldGrad)" stroke-width="2" />
+
+  <text x="400" y="580" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="16" fill="#93c5fd" text-anchor="middle">May this holy month bring tranquility, wisdom, and blessings to all.</text>
+
+  <!-- Social Media Mockup Elements -->
+  <g transform="translate(60, 680)">
+    <rect width="680" height="60" rx="30" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" />
+    <circle cx="40" cy="30" r="16" fill="#facc15" />
+    <text x="70" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="14" fill="#ffffff">@bubt_official • Social Media Campaign</text>
+    <text x="640" y="36" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#94a3b8" text-anchor="end">#BUBT #Ramadan2026</text>
+  </g>
+</svg>

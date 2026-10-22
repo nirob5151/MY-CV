@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4338ca" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5d0b5" />
+      <stop offset="100%" stop-color="#e2b494" />
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#0f172a" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Card / Circle -->
+  <circle cx="300" cy="300" r="270" fill="url(#bgGrad)" />
+  
+  <!-- Subtle decorative creative tech elements -->
+  <circle cx="120" cy="140" r="24" fill="#ffffff" opacity="0.15" />
+  <circle cx="480" cy="420" r="38" fill="#ffffff" opacity="0.12" />
+  <path d="M460 160 L500 160 M480 140 L480 180" stroke="#38bdf8" stroke-width="4" stroke-linecap="round" opacity="0.6" />
+  <text x="80" y="440" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="28" fill="#ffffff" opacity="0.25">&lt;design /&gt;</text>
+
+  <!-- Base figure with shadow -->
+  <g filter="url(#shadow)">
+    <!-- Shoulders / Hooded Jacket -->
+    <path d="M160 520 C160 410, 220 380, 300 380 C380 380, 440 410, 440 520 Z" fill="#1e293b" />
+    <!-- T-shirt collar -->
+    <path d="M260 382 C280 430, 320 430, 340 382 Z" fill="#6366f1" />
+
+    <!-- Neck -->
+    <path d="M270 340 L330 340 L330 395 C310 405, 290 405, 270 395 Z" fill="#e2b494" />
+
+    <!-- Head / Face -->
+    <path d="M225 250 C225 170, 375 170, 375 250 C375 325, 335 365, 300 365 C265 365, 225 325, 225 250 Z" fill="url(#skinGrad)" />
+
+    <!-- Ears -->
+    <ellipse cx="223" cy="265" rx="11" ry="18" fill="#e2b494" />
+    <ellipse cx="377" cy="265" rx="11" ry="18" fill="#e2b494" />
+
+    <!-- Modern Haircut -->
+    <path d="M218 235 C215 150, 270 125, 315 125 C365 125, 385 160, 385 220 C375 200, 345 190, 300 195 C260 200, 230 220, 218 235 Z" fill="url(#hairGrad)" />
+
+    <!-- Modern Designer Glasses -->
+    <rect x="245" y="235" width="45" height="32" rx="8" fill="none" stroke="#0f172a" stroke-width="4.5" />
+    <rect x="310" y="235" width="45" height="32" rx="8" fill="none" stroke="#0f172a" stroke-width="4.5" />
+    <line x1="290" y1="248" x2="310" y2="248" stroke="#0f172a" stroke-width="4.5" />
+    <line x1="225" y1="248" x2="245" y2="248" stroke="#0f172a" stroke-width="4.5" />
+    <line x1="355" y1="248" x2="375" y2="248" stroke="#0f172a" stroke-width="4.5" />
+
+    <!-- Friendly confident smile -->
+    <path d="M280 315 Q300 330 320 315" fill="none" stroke="#9a3412" stroke-width="3.5" stroke-linecap="round" />
+    
+    <!-- Eyes behind glasses -->
+    <circle cx="267" cy="250" r="4.5" fill="#1e1b4b" />
+    <circle cx="333" cy="250" r="4.5" fill="#1e1b4b" />
+    <path d="M255 230 Q267 224 280 230" fill="none" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round" />
+    <path d="M320 230 Q333 224 345 230" fill="none" stroke="#1e1b4b" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Tag badge overlay -->
+  <g transform="translate(180, 520)">
+    <rect x="0" y="0" width="240" height="46" rx="23" fill="#ffffff" opacity="0.95" />
+    <text x="120" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16" fill="#4338ca" text-anchor="middle">NIROB • DESIGNER &amp; CS</text>
+  </g>
+</svg>
